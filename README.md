@@ -1,11 +1,5 @@
-# Pancakeswap Console
-A Pancakeswap Application 
-
-## Why
-It is a pity that some areas do not have access to the functions of PancakeSwap.
-I developed this tool to help these $People$.
-
-I believe $People$ have the right to access the blockchain.
+# Bsc Tool 
+A  Bsc Tool  Application 
 
 ## Building on Linux
 
@@ -18,14 +12,15 @@ Clone & compile:
     git clone https://github.com/ocoderr/bsc-tool.git
     go mod tidy
     go build
-    ./pancakeswap-console 
+    ./bsc-tool
 
     # if u want build app follow this
     # go get fyne.io/fyne/cmd/fyne
-    # fyne package -os darwin -app-id "com.openwallet.pancakeswap"
+    # fyne package -os darwin -app-id "com.openwallet.bsc.tool"
     # fyne package -os windows
 
 ## Features
+Dex(PancakeSwap)
 * Prices      [x]
 * Syrup Pool           [x]
 * Gui              [x]
@@ -47,9 +42,3 @@ Clone & compile:
 * Don't set up too many trading pairs, there will be problems with rpc node.
 * Not tested in window environment
 
-
-### Donations
-
-BNB/CAKE/USDT: 0xec5fa25e37dfa8fa42210a94cbc8a61c7fd3751c
-
-email: irmakgu40@gmail.com

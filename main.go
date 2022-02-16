@@ -36,12 +36,12 @@ func main() {
 		os.Exit(1)
 	}
 
-	configFile := filepath.Join(home, "pancake-conf.yaml")
+	configFile := filepath.Join(home, "tool-conf.yaml")
 	if !Exist(configFile) {
 		config.NewConfig(configFile)
 	}
 	viper.AddConfigPath(home)
-	viper.SetConfigName("pancake-conf")
+	viper.SetConfigName("tool-conf")
 
 	viper.SetDefault("language", "EN")
 	//viper.AutomaticEnv() // read in environment variables that match
@@ -56,7 +56,7 @@ func main() {
 	data.Client = utils.EstimateClient("bsc")
 	go data.StartRefreshPrices()
 
-	a := app.NewWithID("com.openwallet.pancakeswap")
+	a := app.NewWithID("com.openwallet.bsc.tool")
 	a.SetIcon(resourceLogoPng)
 	//a.Settings().SetTheme(theme.LightTheme())
 	a.Settings().SetTheme(&MyTheme{})
